@@ -162,25 +162,15 @@ dic_p7 = {
 }
 
 dic_cluster = {
-    1: 'Cuidador Condicional',
-    2: 'Hogareños',
-    3: 'Tradicional Cercano',
-    4: 'Tradicional Distante',
-    5: 'Dog Lovers'
+    1: 'Hogareños',
+    2: 'Cuidador Condicional',
+    3: 'Cuidador Básico',
+    4: 'Cat Lovers',
+    5: 'Tradicional'
 }
 
 def relabel(value,dic):
     return dic[value]
-
-def cluster_desc(cluster):
-    dic_desc_cluster = {
-        1: '28%'+' de la población. \n Madres jóvenes que hacen rendir su presupuesto. La alimentación es práctica, se debe adaptar a una vida con poco tiempo y muchas cosas, y a su vez enfocarla en los más pequeños.',
-        2: '24%'+' de la población. \n Jóvenes que viven solos o en pareja. Disfrutan de la vida y dedican tiempo al deporte y vida saludable. La alimentación debe ser práctica, saludable y para disfrute, y en todo momento o lugar.',
-        3: '14%'+' de la población. \n Mujeres con hijos ya adultos. Realizan deporte y privilegian la alimentación saludable y respetuosa, que además tenga bajo aporte en calorías. Abiertas a la innovación y tendencias en alimentación. ',
-        4: '19%'+' de la Población. \n Hombres, que impulsan una vida y alimentación saludable para ellos y su familia, con marcas de confianza y respetuosas del entorno, y mejor si se adaptan a una vida rápida.',
-        5: '16%'+' de la población. \n Viven solos o en hogares pequeños, con un buen presupuesto familiar. Buscan el disfrute, relajarse y lo práctico a la hora de alimentarse, y si es algo sano, que aporta a la salud, mejor aún.'
-    }
-    return dic_desc_cluster[cluster]
 
 # ---------------------------- Cargar Modelo ----------------------------------
 
